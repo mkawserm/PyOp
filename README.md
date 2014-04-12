@@ -24,7 +24,8 @@ print "r1-r2 : ",r1-r2
 print "r1/r2 : ",r1/r2
 
 print "r1*r2 : ",r1*r2
-    
+
+
 p = PyOp()
 
 print "p.isPrime(10) : ",p.isPrime(10)
