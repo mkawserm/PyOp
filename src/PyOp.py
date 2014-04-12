@@ -34,7 +34,7 @@ class PyOp(object):
         self.__prime__data__() #initilize our pre calculated prime data
 
 
-    def findFactors(self,n):
+    def findDivisors(self,n):
         if self.isPrime(n):
             return [1,n]
         else:
@@ -462,8 +462,12 @@ if __name__ == '__main__':
     print "r1/r2 : ",r1/r2
     print "r1*r2 : ",r1*r2
     
-    print "Testing PyOp"
+    
+    print 
+    print "Testing PyOp object"
     
     p = PyOp()
     print "p.isPrime(10) : ",p.isPrime(10)
     print "p.isPrime(2147483647) : ",p.isPrime(2147483647)
+    print "p.findPrimeFactors(135) : ",p.findPrimeFactors(135)
+    print "p.findDivisors(135) : ",p.findDivisors(135)
