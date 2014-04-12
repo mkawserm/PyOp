@@ -67,12 +67,17 @@ class PyOp(object):
             lasty = temp
         return [lastx,lasty]
 
+    
     def findGCD(self,a,b):
         while b!=0:
             t = b
             b = a%b
             a = t
         return a
+    
+    def findLCM(self,a,b):
+        return abs(a*b)/self.findGCD(a, b)
+    
         
     def isPrime(self,n):
         if n <= 1 :
@@ -471,3 +476,5 @@ if __name__ == '__main__':
     print "p.isPrime(2147483647) : ",p.isPrime(2147483647)
     print "p.findPrimeFactors(135) : ",p.findPrimeFactors(135)
     print "p.findDivisors(135) : ",p.findDivisors(135)
+    print "p.findGCD(5,20) : ", p.findGCD(5,20)
+    print "p.findLCM(10,20) : ", p.findLCM(10,20) 
