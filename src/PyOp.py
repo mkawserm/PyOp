@@ -235,13 +235,14 @@ class PyOp(object):
                              3659, 3671, 3673, 3677, 3691, 3697, 3701, 3709, 3719, 3727]
         #################################################################################
 ############################################################################################
+"""PyMatrix class provides Matrix calculation"""
+class PyMatrix(object):
+    def __init__(self,*kwards,**kwargs):
+        pass
 
+############################################################################################
 
-
-
-
-
-
+"""Rational class provides Rational number calculation with preservation of Numerator and Denominator"""
 class Rational(object):
     """Representation of rational number"""
     def __init__( self, top = 1, bottom = 1 ):
